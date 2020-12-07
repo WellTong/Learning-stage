@@ -1,0 +1,185 @@
+html {
+    font-size: 62.5% !important;
+}
+@media (min-width: 992px){
+    html{
+        font-size: 62.5%;
+    }
+}
+@media (min-width: 768px){
+    html{
+        font-size: 59%;
+    }
+}
+@media (min-width: 576px){
+    html{
+        font-size: 56%;
+    }
+}
+body{
+    overflow-x: hidden;
+}
+a:hover{
+    text-decoration: none;
+}
+.leftCon{
+    left: 0;
+}
+.leftCon header{
+    height: 80px;
+}
+.leftCon header ul a{
+    font-size: 1.6rem;
+}
+.leftCon .icon-menu{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #858585;
+}
+.login{
+    height: calc(100vh - 80px);
+}
+.login a{
+    font-size: 1.6rem;
+}
+.register{
+    border-radius: 18px;
+}
+@media (max-width: 991.98px){
+    .leftCon{
+        position: relative!important;
+    }
+    .login{
+        height: auto;
+    }
+
+}
+.menu{
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: 0;
+    z-index: 2000;
+    transition: 0.3s;
+}
+.menu.hide{
+    z-index: -1;
+    opacity: 0;
+}
+.menu.show{
+    opacity: 1;
+}
+.list{
+    transition: 0.2s;
+}
+.list.hide{
+    z-index: -1;
+    transform: scale(1.5);
+}
+
+.list.show{
+    transform: scale(1);
+}
+
+.menu .list ul a{
+    font-size: 1.8rem;
+}
+.menu .font,.menu .font .btn{
+    font-size: 1.6rem
+}
+.menu footer{
+    font-size: 1.4rem;
+}
+.menu footer,.menu footer a{
+    color: rgba(0, 0, 0, 0.38);
+}
+#closeBtn{
+    cursor: pointer;
+}
+
+/* 右侧内容区 */
+#pic .icon-right{
+    font-size: 6rem;
+}
+
+.start h2{
+    font-size: 2.2rem;
+}
+.start p{
+    font-size: 1.6rem;
+    line-height: 34px;
+}
+.start a{
+    color: #C2A661;
+}
+.start button{
+    border-radius: 13px;
+}
+
+.betters h3,.teach h3{
+    font-size: 2.2rem;
+}
+.betters p,.teach p{
+    font-size: 1.6rem;
+}
+
+.betters li{
+    margin-top:56px;
+}
+.betters li a{
+    transition: 0.2s;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.betters li a img{
+    width: 50%;
+    margin-top: -28px;
+}
+.betters li a h4{
+    font-size: 1.6rem;
+}
+.betters li a p{
+    font-size: 1.4rem;
+}
+.betters li a p.caption{
+    font-size: 1.2rem;
+    color: #C2A661;
+    opacity: 0.7;
+}
+.betters li a:hover{
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.22);
+    transform: translateY(-5px);
+}
+
+.teach ul{
+    width: 1216px;
+}
+.teach li{
+    width: 288px;
+}
+.scroll li{
+    transition: 0.2s;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.scroll li span{
+    font-size: 1.4rem;
+    background: #C2A661;
+    left: 0;
+    top: 6px;
+}
+.scroll li:hover{
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.22);
+    transform: translateY(-5px);
+}
+
+.footer ul{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12)
+}
+.footer a span.iconfont{
+    font-size: 2rem;
+}
+.footer a.active{
+    color: #00A862!important;
+}
