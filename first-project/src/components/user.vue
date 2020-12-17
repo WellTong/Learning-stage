@@ -1,5 +1,7 @@
 <template>
-    
+    <div id="user">
+        我是user
+    </div>
 </template>
 
 <script>

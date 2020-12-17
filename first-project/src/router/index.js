@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '@/component/home'
-import classify from '@/component/classify'
-import user from '@/component/user'
-import cart from '@/component/cart'
+import home from '@/components/Home'
+import classify from '@/components/Classify'
+import user from '@/components/User'
+import cart from '@/components/Cart'
 
 Vue.use(Router)
 
@@ -17,9 +17,6 @@ export default new Router({
       name: 'classify',
       path: '/classify',
       component: classify,
-      children: {
-
-      }
     },{
       name: 'user',
       path: '/user',
