@@ -19,15 +19,14 @@ export default {
         clearContent: function () {
             this.searchVal = null;
         }
-    },
-    updated: function (){
-        console.log(typeof this.searchVal);
     }
 }
 </script>
 
 <style scoped>
 #search{
+    position: fixed;
+    top: 0%;
     padding: 1rem 0;
     border-bottom: 1px solid gray;
 }

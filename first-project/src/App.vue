@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="app">  
+    <transition :name="handOff" mode="out-in">
+      <router-view></router-view>
+    </transition>
     <bottomNav></bottomNav>
   </div>
 </template>
@@ -9,24 +11,26 @@
 import bottomNav from '@/components/BottomNav'
 export default {
   name: 'App',
+  data() {
+    return {
+      handOff:"",
+      index: '',
+    }
+  },
   components: { 
     bottomNav
+  },
+  mounted(){
+    this.index = this.$route.params.index
+  },
+  beforeUpdate(){
+    var targetIndex = this.$route.params.index;
+    this.handOff = targetIndex < this.index ? "handLeft" : "handRight"
+    this.index = targetIndex
   }
 }
 </script>
 
 <style>
-*{
-  user-select: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
-}
-html,body{
-  font-size: 22px;
-  width: 100%;
-  height: 100%;
-}
+@import './assets/index.css';
 </style>

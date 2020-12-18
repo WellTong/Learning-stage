@@ -1,0 +1,17 @@
+[{
+    "state": 1,
+    "stateName": "待付款",
+    "stateImg": "12345"
+},{
+    "state": 2,
+    "stateName": "待收货",
+    "stateImg": "12345"
+},{
+    "state": 3,
+    "stateName": "待评价",
+    "stateImg": "12345"
+},{
+    "state": 4,
+    "stateName": "已完成",
+    "stateImg": "12345"
+}]

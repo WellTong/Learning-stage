@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '@/components/Home'
-import classify from '@/components/Classify'
-import user from '@/components/User'
-import cart from '@/components/Cart'
+import home from '@/view/Home'
+import classify from '@/view/Classify'
+import user from '@/view/User'
+import order from '@/view/Order'
 
 Vue.use(Router)
 
 export default new Router({
+  linkActiveClass: 'active',
   routes: [
     {
       name: 'home',
@@ -22,9 +23,9 @@ export default new Router({
       path: '/user',
       component: user
     },{
-      name: 'cart',
-      path: '/cart',
-      component: cart
+      name: 'order',
+      path: '/order',
+      component: order
     }
   ]
 })

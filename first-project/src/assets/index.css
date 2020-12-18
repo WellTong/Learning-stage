@@ -1,0 +1,33 @@
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  html,body{
+    overflow: hidden;
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+  }
+  .handRight-enter-active, .handLeft-enter-active{
+    transition: all .3s
+  }
+  .handRight-leave-active, .handLeft-leave-active{
+    transition: all .3s
+  }
+  .handRight-enter{
+    transform: translateX(100%);
+  }
+  .handRight-leave-to{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .handLeft-enter{
+    transform: translateX(-100%);
+  }
+  .handLeft-leave-to{
+    transform: translateX(100%);
+    opacity: 0;
+  }
